@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
+:root {
+    --white-color: #ffffff;
+    --dark-purple: #ddc0ff57;
+    --main-purple: rgba(119, 0, 255, 0.992);
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +15,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, var(--white-color), var(--dark-purple));
+
 }
 
 svg {
@@ -24,8 +34,9 @@ svg:hover {
 }
 
 
-span,h1,h2 {
-    color: white;
+
+h2 {
+    color: rgb(29, 29, 29);
 }
 
 .social {
@@ -39,22 +50,30 @@ span,h1,h2 {
 .main_style img {
     border: solid 5px rgb(255, 255, 255);
     width: 300px;
-    border-radius: 100%;
+    border-radius: 10%;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.089));
+
 }
 
 .main_style {
-    border: solid 0.01px white;
+    /* border: solid 0.01px white; */
     backdrop-filter: blur(7px);
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.089));
     padding: 25px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgba(7, 7, 7, 0.171);
+    background-color: #ffffff;
 }
 
 .container {
     width: 70vw;
     margin: auto;
+}
+
+.port_title {
+    background-image: url('../resources/pattern/patter_02.png');
+    color: white;
+    background-color: var(--main-purple);
 }
 
 .flex_center {
@@ -81,4 +100,9 @@ video {
 
 .card_02 {
     width: 40vw;
+}
+
+.info p {
+    text-align: justify;
+    padding-bottom: 15px;
 }
