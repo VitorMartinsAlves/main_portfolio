@@ -14,6 +14,7 @@
 }
 
 body {
+    text-align: justify;
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, var(--white-color), var(--dark-purple));
 
@@ -21,22 +22,37 @@ body {
 
 svg {
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     transition: 0.5s;
 }
 
 svg:hover {
     transition: 0.5s;
-    width: 35px;
-    height: 35px;
+    /* width: 35px; */
+    /* height: 35px; */
     color: rgb(22, 22, 22);
 }
 
 
 
-h2 {
+h2,
+h3,
+span {
+    /* padding: 0px 0px 15px 0px; */
     color: rgb(29, 29, 29);
+}
+h3{
+    padding-top: 10px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    color: var(--main-purple);
+}
+.card p {
+    color: rgb(150, 150, 150);
 }
 
 .social {
@@ -71,7 +87,7 @@ h2 {
 }
 
 .port_title {
-    background-image: url('../resources/pattern/patter_02.png');
+    background-image: url('https://cdn.dribbble.com/users/1923171/screenshots/11113701/media/79b1237e0664791d88932bfedf768b14.gif');
     color: white;
     background-color: var(--main-purple);
 }
@@ -99,10 +115,10 @@ video {
 }
 
 .card_02 {
-    width: 40vw;
+    width: 90vw;
 }
 
 .info p {
-    text-align: justify;
+    
     padding-bottom: 15px;
 }
