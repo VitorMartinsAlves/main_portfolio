@@ -1,4 +1,4 @@
-let dev = true
+let dev = false
 function getter_cdn(asset) {
     if (!dev) {
         return `https://raw.githubusercontent.com/VitorMartinsAlves/pseudo_cdn/main/${asset}`
@@ -11,6 +11,7 @@ function updateImageSrc() {
     imgList.forEach((img) => {
         const assetName = img.dataset.image;
         img.setAttribute('src', getter_cdn(assetName));
+        img.removeAttribute('data-image')
     })
 }
 
